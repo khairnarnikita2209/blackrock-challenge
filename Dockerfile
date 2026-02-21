@@ -5,7 +5,7 @@ WORKDIR /app
 # Copy only needed files
 COPY gradlew .
 COPY gradle/ gradle/
-COPY build.gradle.kts settings.gradle ./
+COPY build.gradle.kts ./
 COPY src/ src/
 
 # Make gradlew executable
