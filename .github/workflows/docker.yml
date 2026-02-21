@@ -36,15 +36,16 @@ jobs:
           fi
           echo "Docker secrets are present"
 
-      - name: Login to Docker Hub
-        uses: docker/login-action@v3
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v2
         with:
-          username: khairnarnikita
-          password: ${{ secrets.DOCKER_SECRET }}
+          registry: ghcr.io
+          username: ${{ secrets.DOCKER_USERNAME}}
+          password: ${{ secrets.DOCKER_SECRET}}
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v3
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/blackrock-app:latest
+          tags: ghcr.io/${{ secrets.DOCKER_USERNAME}}/blackrock-hackathon:latest
