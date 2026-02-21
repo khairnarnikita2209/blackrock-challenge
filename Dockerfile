@@ -15,7 +15,7 @@ RUN chmod +x gradlew
 RUN ./gradlew clean bootJar --no-daemon --stacktrace --refresh-dependencies
 
 # ---------- Run stage ----------
-FROM eclipse-temurin:20-jre-jammy
+FROM eclipse-temurin:21-jre-jammy
 WORKDIR /app
 
 # Copy jar from builder

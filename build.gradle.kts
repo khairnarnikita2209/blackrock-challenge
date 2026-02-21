@@ -10,7 +10,7 @@ description = "Blackrock challenge project "
 
 java {
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(20)
+		languageVersion = JavaLanguageVersion.of(21)
 	}
 }
 
