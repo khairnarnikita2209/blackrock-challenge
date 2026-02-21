@@ -5,6 +5,7 @@ import com.example.blackrock.dto.TransactionFilterRequest;
 import com.example.blackrock.dto.TransactionParseRequest;
 import com.example.blackrock.dto.TransactionValidatorRequest;
 import com.example.blackrock.responseDto.FilteredtransactionResponse;
+import com.example.blackrock.responseDto.ReturnCalculationResponse;
 import com.example.blackrock.responseDto.ValidatedTransactionResponse;
 import com.example.blackrock.services.*;
 import com.example.blackrock.responseDto.ParsedTransactionResponse;
@@ -46,12 +47,12 @@ public class blkrockController {
         return transactionFilterService.filterTransactionsMethod(request);
     }
     @PostMapping("/returns:nps")
-    public void calculateNpsReturns(@RequestBody CalculateRetunsRequest request){
-        calculateNpsReturnsService.calculateNpsReturns(request);
+    public ReturnCalculationResponse calculateNpsReturns(@RequestBody CalculateRetunsRequest request){
+        return calculateNpsReturnsService.calculateNpsReturns(request);
     }
 
     @PostMapping("/returns:index")
-    public void calculateIndexReturns(@RequestBody CalculateRetunsRequest request){
-        calculateIndexReturnsService.calculateIndexReturns(request);
+    public ReturnCalculationResponse calculateIndexReturns(@RequestBody CalculateRetunsRequest request){
+        return calculateIndexReturnsService.calculateIndexReturns(request);
     }
 }

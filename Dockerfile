@@ -1,5 +1,5 @@
 # ---------- Build stage ----------
-FROM gradle:9.3.1-jdk20 AS builder
+FROM gradle:9.3.1-jdk21 AS builder
 WORKDIR /app
 
 # Copy wrapper and Gradle files

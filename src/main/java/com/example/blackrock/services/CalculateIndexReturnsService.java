@@ -1,10 +1,12 @@
 package com.example.blackrock.services;
 
 import com.example.blackrock.dto.CalculateRetunsRequest;
+import com.example.blackrock.responseDto.ReturnCalculationResponse;
 
 public class CalculateIndexReturnsService {
 
-    public void calculateIndexReturns(CalculateRetunsRequest request){
+    public ReturnCalculationResponse calculateIndexReturns(CalculateRetunsRequest request){
 
+        return null;
     }
 }
