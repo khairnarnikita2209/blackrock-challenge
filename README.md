@@ -8,6 +8,7 @@ The dto, requestDto, and responseSto are part of the package com.example.blackro
 
 Setup instructions:
 1.Clone from this repo to a workspace
-2. Make sure you have java version 20 installed
-3. gradle used is v9, install that as well
-4. all services are runnig on port 5547 
+2.Make sure you have java version 21 installed 
+3.gradle used is v9, install that as well
+4.all services are running on port 5547 
+5.use command .\gradlew.bat bootRun to run this project 
