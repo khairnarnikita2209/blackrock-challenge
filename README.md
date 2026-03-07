@@ -6,9 +6,9 @@ I have created a single controller to handle requests
 The dto, requestDto, and responseSto are part of the package com.example.blackrock.dto and com.example.blackrock.responseDto respectively.
 
 
-###Setup instructions:
-##1.Clone from this repo to a workspace
-##2.Make sure you have java version 21 installed 
-##3.gradle used is v9, install that as well
-##4.all services are running on port 5547 
-##5.use command .\gradlew.bat bootRun to run this project 
+Setup instructions:
+1. Clone from this repo to a workspace
+2. Make sure you have Java version 21 installed 
+3.gradle used is v9, install that as well
+4. All services are running on port 5547 
+5. Use command .\gradlew.bat bootRun to run this project 
